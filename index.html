@@ -1,50 +1,106 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android Selfie Camera - Mükemmel Portreler</title>
+    <title>Android Selfie Camera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
-            <div class="logo">Android Selfie Camera</div>
-            <a href="privacy.html" class="cta-button" style="background: transparent; border: 1px solid white; padding: 10px 20px;">Gizlilik Politikası</a>
+            <div class="header-left">
+                <img src="app_icon.png" alt="Logo" class="nav-logo">
+                <div class="logo-text">Android Selfie Camera</div>
+            </div>
+            <nav>
+                <a href="index.html" id="nav-home">Home</a>
+                <a href="privacy.html" id="nav-privacy">Privacy Policy</a>
+                <a href="mailto:support@androidselfiecamera.com" id="nav-contact">Contact</a>
+                <select id="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="en" selected>English</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                    <option value="ru">Русский</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </nav>
         </header>
 
         <section class="hero">
             <div class="hero-text">
-                <h1>Selfie'lerinizi Sanata Dönüştürün</h1>
-                <p>Profesyonel filtreler, gelişmiş düzenleme araçları ve 4K video kaydı ile en iyi halinizi yakalayın. Şimdi Google Play'de!</p>
-                <a href="#" class="cta-button">Google Play'den İndir</a>
+                <h1 id="hero-title">Turn Your Selfies into Art</h1>
+                <p id="hero-desc">Capture your best self with professional filters, advanced editing tools, and 4K video
+                    recording.</p>
+                <a href="#" class="cta-button" id="download-btn">Download on Google Play</a>
             </div>
-            <img src="app_icon.png" alt="App Icon" style="max-width: 300px; border-radius: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <div class="hero-image">
+                <!-- Using App Icon as main visual for now, user can replace with phone mockup -->
+                <img src="app_icon.png" alt="App Preview" class="phone-mockup">
+            </div>
         </section>
 
+        <h2 class="section-title" id="features-title">Why Choose Us?</h2>
         <section class="features">
+            <!-- Feature 1 -->
             <div class="feature-card">
-                <h3>🎨 Profesyonel Studio</h3>
-                <p>Sıcaklık, gölge, kontrast ve daha fazlasını detaylıca ayarlayın. Fotoğraflarınıza hayat verin.</p>
+                <div class="icon">🎨</div>
+                <h3 id="f1-title">Professional Studio</h3>
+                <p id="f1-desc">Adjust warmth, shadows, contrast, and more in detail.</p>
+                <img src="images/feature_studio.png" alt="Studio" class="feature-img">
             </div>
+            <!-- Feature 2 -->
             <div class="feature-card">
-                <h3>✨ Güzellik Modu</h3>
-                <p>Otomatik cilt pürüzsüzleştirme ve yüz inceltme ile her zaman harika görünün.</p>
+                <div class="icon">✨</div>
+                <h3 id="f2-title">Beauty Mode</h3>
+                <p id="f2-desc">Look great every time with automatic skin smoothing.</p>
+                <img src="images/feature_beauty.png" alt="Beauty" class="feature-img">
             </div>
+            <!-- Feature 3 -->
             <div class="feature-card">
-                <h3>📹 4K Video Kaydı</h3>
-                <p>Ultra yüksek çözünürlükte videolar çekin ve anılarınızı en net haliyle saklayın.</p>
+                <div class="icon">📹</div>
+                <h3 id="f3-title">4K Video Recording</h3>
+                <p id="f3-desc">Record videos in ultra-high resolution.</p>
+                <img src="images/feature_video.png" alt="Video" class="feature-img">
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="icon">🌙</div>
+                <h3 id="f4-title">Night Mode</h3>
+                <p id="f4-desc">Capture bright photos even in low light.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="icon">🎭</div>
+                <h3 id="f5-title">Live Filters</h3>
+                <p id="f5-desc">Preview hundreds of filters in real-time.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="feature-card">
+                <div class="icon">✂️</div>
+                <h3 id="f6-title">Easy Editing</h3>
+                <p id="f6-desc">Crop, rotate, and adjust your photos intuitively.</p>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2026 Android Selfie Camera. Tüm hakları saklıdır.</p>
-            <br>
-            <a href="privacy.html">Gizlilik Politikası</a> | <a href="mailto:support@androidselfiecamera.com">İletişim</a>
+            <p id="footer-rights">© 2026 Android Selfie Camera. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html" id="footer-privacy">Privacy Policy</a> |
+                <a href="mailto:support@androidselfiecamera.com" id="footer-contact">Contact</a>
+            </div>
         </footer>
     </div>
+    <script src="translations.js"></script>
 </body>
+
 </html>
