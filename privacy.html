@@ -1,73 +1,141 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Android Selfie Camera</title>
+    <title>Privacy Policy - Android Selfie Camera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .privacy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        .privacy-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            line-height: 1.8;
+            color: #d0d0d0;
+        }
+
+        .privacy-card h2 {
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .privacy-card p {
+            margin-bottom: 15px;
+        }
+
+        .privacy-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .privacy-card li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Android Selfie
-                    Camera</a></div>
-            <a href="index.html" class="cta-button"
-                style="background: transparent; border: 1px solid white; padding: 10px 20px;">Ana Sayfa</a>
+            <div class="header-left">
+                <img src="app_icon.png" alt="Logo" class="nav-logo">
+                <div class="logo-text">Android Selfie Camera</div>
+            </div>
+            <nav>
+                <a href="index.html" id="nav-home">Home</a>
+                <a href="privacy.html" id="nav-privacy" style="color: white;">Privacy Policy</a>
+                <a href="mailto:support@androidselfiecamera.com" id="nav-contact">Contact</a>
+                <select id="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="en" selected>English</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                    <option value="ru">Русский</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </nav>
         </header>
 
-        <section class="policy-content">
-            <h1>Gizlilik Politikası</h1>
-            <p><strong>Son Güncelleme: 13 Ocak 2026</strong></p>
+        <div class="privacy-container">
+            <h1 class="section-title" id="pp-title" style="margin-top: 0; text-align: left;">Privacy Policy</h1>
+            <span class="last-updated" id="pp-last-updated">Last Updated: January 13, 2026</span>
 
-            <p>Android Selfie Camera uygulaması olarak gizliliğinize önem veriyoruz. Bu Gizlilik Politikası,
-                uygulamamızı kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını ve paylaşıldığını
-                açıklar.</p>
+            <div class="privacy-card">
+                <p id="pp-intro">At Android Selfie Camera, we prioritize your privacy...</p>
 
-            <h2>1. Toplanan Bilgiler ve İzinler</h2>
-            <p>Uygulamamızın tam işlevselliği için aşağıdaki izinlere ihtiyaç duymaktayız:</p>
-            <ul>
-                <li><strong>Kamera İzni:</strong> Fotoğraf ve video çekebilmeniz için gereklidir. Görüntüler cihazınızda
-                    işlenir ve hiçbir sunucuya yüklenmez (siz paylaşmadığınız sürece).</li>
-                <li><strong>Depolama / Galeri İzni:</strong> Çekilen veya düzenlenen fotoğrafları cihazınıza
-                    kaydedebilmek ve mevcut fotoğrafları düzenlemek için gereklidir.</li>
-                <li><strong>Mikrofon İzni:</strong> Video kayıtlarında ses alabilmek için gereklidir.</li>
-            </ul>
+                <h2 id="pp-h1">1. Information Collection</h2>
+                <p id="pp-p1">We require specific permissions...</p>
+                <ul>
+                    <li id="pp-li1">Camera...</li>
+                    <li id="pp-li2">Storage...</li>
+                    <li id="pp-li3">Mic...</li>
+                </ul>
 
-            <h2>2. Veri Kullanımı</h2>
-            <p>Topladığımız (veya eriştiğimiz) verileri şu amaçlarla kullanırız:</p>
-            <ul>
-                <li>Uygulamanın temel özelliklerini sağlamak (fotoğraf çekimi, düzenleme).</li>
-                <li>Uygulama performansını iyileştirmek ve hataları gidermek.</li>
-                <li><strong>Reklamlar:</strong> Google AdMob servisi aracılığıyla size uygun reklamlar göstermek için
-                    cihaz kimlikleri (Advertising ID) kullanılabilir.</li>
-            </ul>
+                <h2 id="pp-h2">2. Data Usage</h2>
+                <p id="pp-p2">We do not collect...</p>
 
-            <h2>3. Üçüncü Taraf Hizmetleri</h2>
-            <p>Uygulamamız aşağıdaki üçüncü taraf hizmetlerini kullanabilir:</p>
-            <ul>
-                <li><strong>Google AdMob:</strong> Reklam gösterimi için. <a href="https://policies.google.com/privacy"
-                        target="_blank" style="color: #4facfe;">Google Gizlilik Politikası</a></li>
-                <li><strong>Google Play Services:</strong> Uygulama içi satın alma ve doğrulama işlemleri için.</li>
-            </ul>
+                <h2 id="pp-h3">3. Third-Party Services</h2>
+                <p id="pp-p3">We use trusted...</p>
+                <ul>
+                    <li id="pp-li-admob">AdMob...</li>
+                    <li id="pp-li-play">Play Services...</li>
+                </ul>
 
-            <h2>4. Veri Güvenliği</h2>
-            <p>Fotoğraflarınız ve videolarınız tamamen cihazınızda yerel olarak işlenir. Kişisel verilerinizi
-                sunucularımızda saklamıyoruz veya üçüncü şahıslara satmıyoruz.</p>
+                <h2 id="pp-h4">4. Data Security</h2>
+                <p id="pp-p4">Your photos are processed locally...</p>
 
-            <h2>5. İletişim</h2>
-            <p>Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
-            <p>E-posta: support@androidselfiecamera.com</p>
-        </section>
+                <h2 id="pp-h5">5. Disclaimer</h2>
+                <p id="pp-p5">This app is provided as is...</p>
+
+                <h2 id="pp-h6">6. Contact</h2>
+                <p id="pp-p6">Contact us at...</p>
+            </div>
+        </div>
 
         <footer>
-            <p>&copy; 2026 Android Selfie Camera. Tüm hakları saklıdır.</p>
+            <p id="footer-rights">© 2026 Android Selfie Camera. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html" id="footer-privacy">Privacy Policy</a> |
+                <a href="mailto:support@androidselfiecamera.com" id="footer-contact">Contact</a>
+            </div>
         </footer>
     </div>
+    <script src="translations.js"></script>
 </body>
 
 </html>
